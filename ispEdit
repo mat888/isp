@@ -1,0 +1,32 @@
+The Inscribed Square Problem poses the following question: Given an arbitrary Jordan Curve (continuous, closed, non-intersecting 2-d loop), do four points exist on the edge of the curve such that they are vertices of a square? This paper attempts an affirmative proof on the question.
+
+Consider properties of the lines connecting the diagonals of a rhombus:
+
+They share a midpoint, they are orthogonal to each other, and if the length of the diagonals is equal, the rhombus is a square. With these properties in mind, we investigate an arbitrary Jordan Curve or 'loop.'
+
+Sweeping Midpoints
+
+Since the vertices of a square must center around two mid-points with respect to the edges of the loop, a function to produce a 'curve of mid-points,' in relation to those edges is defined:
+
+Take an infinite line at angle $\theta$ to the x-axis, and sweep it across the loop, using its intersections with the edges to determine a midpoint between them. If the line intercepts the curve at more than two points, such that multiple mid-points exist, use the path of the loop as precedent (starting with the point of initial contact between the sweep line and Jordan Curve), and allow the line to move back and forth across any edge parallel to the 'greater than two' intercept region. 
+
+Let $\mu(\theta)$ represent the midpoint curve at angle $\theta$. 
+
+The figure above illuminates the order that $\mu(\theta)$ generates its curves to remain continuous.
+
+This curve includes all possible midpoints at angle $\theta$, and spans the length of the curve orthogonal to the sweep. Since it can be reasoned that arbitrarily small changes in $\theta$ produce arbitrarily small changes in $\mu(\theta)$, the midpoint curve, it is a continuous function.
+
+Let $\alpha = \theta + \frac{\pi}{4}$
+
+Repeat this sweep at an angle orthogonal to $\theta$, $\alpha$ to generate another midpoint curve. Since both of these curves span their orthogonal lengths of the loop, and are continuous, they share at least one intersection point, $p_{\theta}$. 
+
+Let $h(\theta)$ be the curve representing each intersection between $\mu(\theta)$, and $\mu(\alpha)$ with respect to $\theta$.
+
+Since $\mu$ is continuous, the points of intersection also form the continuous curve, $h(\theta)$. This function is cyclic around one-hundred-eighty degrees, but the orthogonal curves will overlap every ninety degrees at which point the primary angle of sweep, $\theta$ occupies the starting angle of the secondary angle, $\alpha$, and vice versa. 
+
+Recall that each point in $h(\theta)$ represents an intersection between two midpoints of the edge of the loop, and define the length the line spans through the midpoint to the corresponding edges of the loop as $l(\theta)$ for the primary sweep, and $l(\alpha)$ for the orthogonal sweep. As the curve $h(\theta)$ progresses, the corresponding lengths of $l(\theta)$ and $l(\alpha)$ change continuously - importantly, every ninety degrees the values for these two lengths will have swapped, so either:
+
+1. $l(\theta)$ and $l(\alpha)$ start equal to each other, or...
+2. $l(\theta)$ and $l(\alpha)$ have different initial values, and somewhere between their current value $\theta$ and the orthogonal angle $\alpha$ (where they will have swapped values), the length of each of line will intersect each other (Intermediate Value Theorem).
+
+The point where $l(\theta)$ and $l(\alpha)$ are equal represents a point in 2-d space such that two orthogonal lines of equal length share a midpoint between edges of the loop, forming the diagonals of a square.
