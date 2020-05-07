@@ -1,1 +1,1 @@
-"# isp" 
+Timid proposal for a proof of inscribed square. This proof was created with the most complex case being an intuitive curve - work will be done to judge its quality on topological curves when I understand topology.
